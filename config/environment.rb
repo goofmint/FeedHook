@@ -42,4 +42,6 @@ end
 
 require 'sdb/active_sdb'
 require 'sdb/right_sdb_interface'
+AWS_ACCESS_KEY = ""
+AWS_SECRET_KEY = ""
 RightAws::ActiveSdb.establish_connection AWS_ACCESS_KEY, AWS_SECRET_KEY
