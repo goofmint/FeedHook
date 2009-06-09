@@ -39,3 +39,7 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+require 'sdb/active_sdb'
+require 'sdb/right_sdb_interface'
+RightAws::ActiveSdb.establish_connection AWS_ACCESS_KEY, AWS_SECRET_KEY
